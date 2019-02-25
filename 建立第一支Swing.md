@@ -7,6 +7,12 @@ JFrame frame=new JFrame("視窗名稱");
 Container cp=frame.getContentPane();
 <h2>宣告按鈕元件</h2>
 JButton btn=new JButton("按鈕名稱");
+<h2>BorderLayout佈局管理員</h2>
+cp.add(btn,BorderLayout.EAST);//元件位置在東邊</br>
+cp.add(btn,BorderLayout.WEST);//元件位置在西邊</br>
+cp.add(btn,BorderLayout.SOUTH);//元件位置在南邊</br>
+cp.add(btn,BorderLayout.NORTH);//元件位置在北邊</br>
+cp.add(btn,BorderLayout.CENTER);//元件位置在中間
 <h2>將元件加入面板</h2>
 cp.add(btn);
 <h2>設定式窗關閉動作並且調整視窗大小及顯示視窗</h2>
